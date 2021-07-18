@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Jui-yang Cheng ECS162 P2</title>
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Homemade+Apple|Indie+Flower|Long+Cang&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<p>Daily Postcard Creator</p>
+		</header>
+		<main id = "main">
+		
+		
+		
+			<div id = "pc" class = "postcard">
+				<div class = "card">
+					<div class = "left_box">
+						<div id = "ci" class = "choose_img">
+							<label for="fileChooser" class = "choose_letter">Choose Image</label>
+							<input type="file" id="fileChooser" accept="image/png, .jpeg, .jpg, image/gif" style = "visibility: hidden;"> 
+						</div>
+						<img id="serverImage"/>
+						<div id = "ri">
+						</div>
+					</div>
+					<div id = "uc" contenteditable="true" class = "user_content">write your message here!</div>
+				</div>
+			</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<div class = "option">
+				<!-- choosing font -->
+				<div class = "font_option">
+					<div class = "font_title">
+						<p>Choose your font</p>
+					</div>
+					<div id = "fc" class = "font_choice">
+						<div id = "f1" class = "font_one">&#10070 Indie Flower</div>
+						<div id = "f2" class = "font_two">&#9671 Dancing Script</div>
+						<div id = "f3" class = "font_three">&#9671 Long Cang</div>
+						<div id = "f4" class = "font_four">&#9671 Homemade Apple</div>
+					</div>
+				</div>
+				<!-- choosing color -->
+				<div class = "color_option">
+					<div class = "color_title">
+						<p>Choose your color</p>
+					</div>
+					<div class = "color_big_box">
+						<div id = "c1" class = "color_box" style="background-color: #e6e2cf;"></div>
+						<div id = "c2" class = "color_box" style="background-color: #dbcaac; border: 1px solid #dbcaac;"></div>
+						<div id = "c3" class = "color_box" style="background-color: #c9cbb3; border: 1px solid #c9cbb3;"></div>
+						<div id = "c4" class = "color_box" style="background-color: #bbc9ca; border: 1px solid #bbc9ca;"></div>
+						<div id = "c5" class = "color_box" style="background-color: #a6a5b5; border: 1px solid #a6a5b5;"></div>
+						<div id = "c6" class = "color_box" style="background-color: #b5a6ab; border: 1px solid #b5a6ab;"></div>
+						<div id = "c7" class = "color_box" style="background-color: #eccfcf; border: 1px solid #eccfcf;"></div>
+						<div id = "c8" class = "color_box" style="background-color: #eceeeb; border: 1px solid #eceeeb;"></div>
+						<div id = "c9" class = "color_box" style="background-color: #bab9b5; border: 1px solid #bab9b5;"></div>
+					</div>
+				</div>
+				<!-- share postcard -->
+				<div class = "share_box" style="display: inline;">
+					<div id = "sp" class = "share_postcard">
+						<p>Share&nbsp;postcard</p>
+					</div>
+				</div>
+			</div>
+		</main>
+		<script src = "actions.js"></script>
+	</body>
+</html>

@@ -1,0 +1,181 @@
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+header {
+	font-family: "Dancing Script";
+	font-size: calc(45px + 0.5vw);
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 5%;
+	font-weight: lighter;
+}
+
+main {
+	margin-right: calc(1px + 15vw);
+	margin-left: calc(1px + 15vw);
+}
+
+
+.postcard {
+	border-radius: 1vw;
+	border: none;
+	background-color: #e6e2cf;
+/*	max-width: 30vw;*/
+/*	max-height: 100px;*/
+}
+
+.card {
+/*	padding: 2%;*/
+	display: flex;
+	flex-direction: row;
+}
+
+
+.left_box {
+	margin: 2%;
+	border-right: 2px solid black;
+	display: flex;
+	flex-direction: column;
+	width: calc((93.5vw - 2px - 40vw) / 2);
+}
+
+.choose_img {
+	margin: 2%;
+	position: relative;
+	border: 2px dashed black;
+	height: 25vh;
+	width: calc((93.5vw - 4px - 40vw - ) / 2);
+}
+
+.choose_letter {
+	cursor: pointer;
+	position: absolute;
+	left: 30%;
+	right: 30%;
+	top: 50%;
+	bottom: 50%;
+	font-size: calc(10px + .5vw);
+	font-weight: bold;
+}
+
+.replace_img {
+	display: inline;
+	margin-top: 2%;
+	cursor: pointer;
+	border: 2px solid black;
+	font-size: calc(15px + 0.5vw);
+	text-align: center;
+}
+
+.user_content {
+	padding: 2%;
+	padding-left: 1%;
+	font-family: "Indie Flower";
+	max-width: calc((110vw - 2px - 40vw) / 2);
+	border: none;
+}
+
+.option {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+/*font options*/
+
+.font_option {
+	margin: 2%;
+	display: flex;
+	flex-direction: column;
+	font-size: calc(10px + .5vw);
+}
+
+.font_title {
+	padding-top: 4%;
+	padding-bottom: 4%;;
+}
+
+.font_choice {
+	display: flex;
+	flex-direction: column;
+}
+
+.font_one {
+	cursor: pointer;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	font-family: "Indie Flower";
+}
+
+.font_two {
+	cursor: pointer;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	font-family: "Dancing Script";
+}
+
+.font_three {
+	cursor: pointer;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	font-family: "Long Cang";
+}
+
+.font_four {
+	cursor: pointer;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	font-family: "Homemade Apple";
+}
+
+/*color options*/
+
+.color_option {
+	margin: 2%;
+	display: flex;
+	flex-direction: column;
+	font-size: calc(10px + .5vw);
+}
+
+.color_title {
+	padding-top: 4%;
+	padding-bottom: 4%;;
+}
+
+.color_big_box {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 250px;
+}
+
+.color_box {
+	cursor: pointer;
+	width: calc(30px + .5vw);
+	height: calc(30px + .5vw);
+	border: 1px solid black;
+	margin: 2%;
+}
+
+.share_box {
+	align-content: center;
+}
+
+.share_postcard {
+	cursor: pointer;
+	border: 2px solid black;
+	align-content: center;
+	margin-top: 45%;
+/*	background-color: white;*/
+	width: auto;
+	margin: 2%;
+	font-size: calc(15px + .5vw);
+}
+
+[contenteditable] {
+	outline: 0px solid transparent;
+}
